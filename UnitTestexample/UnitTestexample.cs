@@ -1,3 +1,4 @@
+using ClassLibraryUnit;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
@@ -9,7 +10,8 @@ namespace UnitTestexample
         [TestMethod]
         public void Calcolo1Test()
         {
-            
+            bool resp =ClassExample.Calcolo1();
+            Assert.AreEqual(true, resp);
         }
     }
 }
